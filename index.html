@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Happy Valentine's Day</title>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap" rel="stylesheet">
+        <style>
+            body{
+                margin: 0;
+                padding: 40px 20px;
+                min-height: 100vh;
+                background-image: url(https://i.pinimg.com/736x/c2/75/78/c27578e2edfab2290faf7f56f6d0bc3f.jpg);
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                box-sizing: border-box;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+            h1{
+                font-family: 'Playfair Display', serif;
+                color: #C9184A;
+                margin-top: 0;
+            }
+            h2 {
+                font-family: 'Playfair Display', serif;
+                font-weight: 600;
+                font-size: 28px;
+                color: #D6336C; 
+                margin-bottom: 15px;
+            }
+
+            h3 {
+                font-family: 'Cormorant Garamond', serif;
+                font-style: italic;
+                font-weight: 500;
+                font-size: 26px;
+                color: #8A2846; 
+                letter-spacing: 0.5px;
+                margin-top: 20px;
+            }
+            h3 {
+                animation: fadeIn 2s ease-in-out;
+            }
+            @keyframes fadeIn {
+                from { opacity: 0; transform: translateY(10px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+            h1, h2, h3 {
+                transition: all 0.4s ease;
+            }
+            h1:hover {
+                text-shadow:
+                0 0 5px rgba(201, 24, 74, 0.4),
+                0 0 15px rgba(201, 24, 74, 0.3);
+                transform: scale(1.03);
+            }
+            h2:hover {
+                text-shadow:
+                0 0 5px rgba(214, 51, 108, 0.4),
+                0 0 12px rgba(214, 51, 108, 0.3);
+            }
+            h3:hover {
+                text-shadow:
+                0 0 4px rgba(138, 40, 70, 0.4),
+                0 0 10px rgba(138, 40, 70, 0.25);
+            }
+            .intro {
+                font-family: 'Lora', serif;
+                font-size: 18px;
+                line-height: 1.8;
+                color: #3A3A3A;
+                max-width: 500px;
+                margin: 0 auto;
+                font-style: italic;
+            }
+            p{
+                font-family: 'Merriweather', serif;
+                font-size: 14px;
+                line-height: 1.5;
+            }
+            .love{
+                font-family: 'Pacifico', cursive;
+                font-size: 38px;
+                color: #e63946;
+                text-align: center;
+                text-shadow:
+                0 0 5px rgba(230, 57, 70, 0.4),
+                0 0 10px rgba(230, 57, 70, 0.3),
+                0 0 20px rgba(255, 105, 135, 0.2); 
+            }
+            @keyframes glowPulse {
+                0% {
+                    text-shadow:
+                    0 0 5px rgba(230, 57, 70, 0.4),
+                    0 0 10px rgba(230, 57, 70, 0.3),
+                    0 0 20px rgba(255, 105, 135, 0.2);
+                }
+                50% {
+                    text-shadow:
+                    0 0 8px rgba(230, 57, 70, 0.6),
+                    0 0 15px rgba(230, 57, 70, 0.5),
+                    0 0 25px rgba(255, 105, 135, 0.4);
+                }
+                100% {
+                    text-shadow:
+                    0 0 5px rgba(230, 57, 70, 0.4),
+                    0 0 10px rgba(230, 57, 70, 0.3),
+                    0 0 20px rgba(255, 105, 135, 0.2);
+                }
+            }
+            .love-text {
+                animation: glowPulse 3s infinite ease-in-out;
+            }
+
+            .heart{
+                display: inline-block;
+                font-size: 20px;
+                animation: heartbeat 1.2s ease-in-out infinite;
+            }
+             @keyframes heartbeat {
+                0%   { transform: scale(1); }
+                20%  { transform: scale(1.25); }
+                40%  { transform: scale(1); }
+                60%  { transform: scale(1.25); }
+                100% { transform: scale(1); }
+            }
+                .emoji{
+                    position: absolute;
+                    bottom: -20px;
+                    font-size: 20px;
+                    animation: floatUp 6s linear infinite;
+                    opacity: 0.7;
+                }
+                @keyframes floatUp {
+                    0% {
+                        transform: translateY(0) scale(1);
+                        opacity: 1;
+                    }
+                    100% {
+                        transform: translateY(-100vh) scale(1.5);
+                        opacity: 0;
+                    }
+                }
+                .letter{
+                    background: white;
+                    background-image: url();
+                    padding: 50px;
+                    margin: 0;
+                    width: 90%;
+                    max-width: 500px;
+                    border-radius: 20px;
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+                    text-align: center;
+                    box-sizing: border-box;
+                }
+                .letter {
+                    animation: fadeIn 2s ease-in-out;
+                }
+                @keyframes fadeIn {
+                    from { opacity: 0; transform: translateY(30px); }
+                    to { opacity: 1; transform: translateY(0); }
+                }
+                @media (max-width:600px) {
+                    .letter{
+                        width: 90%;
+                        padding: 20px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                    }
+                }
+                .forever{
+                    color: #C9184A;
+                }
+        </style>
+    </head>
+    <body>
+        <div class="container" onclick="openletter(this)">
+            <div class="envelope">
+                <div class="flap"></div>
+                <div class="letter">
+                    <h1>Onyemnacho, My Love.<span class="emoji">&#10084;&#65039;&#10084;&#65039;&#10084;&#65039;&#10084;&#65039;&#10084;&#65039;&#10084;&#65039;&#10084;&#65039;</span></h1>
+                    <h2>Happy Valentine's Day My Sweet Girl.</h2>
+                    <h3>A small warning before you continue…&#128522;</h3>
+                    <p class="intro">The words ahead carry pieces of my heart. Handle them gently, because they were written only for you.</p>
+                    <p>
+                        From the moment you came into my life, everything started to feel a little brighter and warmer.<br/>
+                        I find myself smiling at the smallest things because they remind me of you, your laugh(it literally makes my day hearing it)
+                        the way your eyes light up, the way your mood brightens when you talk about something. I love when you yap (it has to be my favourite moment),<br/>
+                        I love how kind your heart is to everyone around you, I love when you update me on the tiniest moment of your life it means a lot it means I'm loved valued and respected by you.<br/>
+                        Knowing you has been one of the best part of my days.
+                    </p>
+                    <p>
+                        I want you to know how much you mean to me. You make my hard days feel easy and smooth, like when
+                        I'm crashing out because of a bad day of coding or need one crazy advice (I mean first son first daughter, advice go choke for our mouth normally).<br/>
+                        I love how strong you are (omoo especially with what you're going through currently mehn you're strong asf, I won't lie).<br/>
+                        Being with you makes me want to be better, want to be up and doing, want to make you smile every single time, want to spoil you silly because you deserve it.<br/>
+                        I love how you love me.
+                    </p>
+                    <p>
+                        No matter what happens between us, I hope you always remember that you are cared for, appreciated, loved and never alone. Because babygirl I ain't going nowhere.<br/>
+                        I'm grateful for every moment we share, the jokes, the jabs, the scores we keep after a crazy jab one of us drops (I'm the one always keeping it sha because you dey always enter me it is well), the nasty talks,
+                        how you say you would rape me (God, are you serious? I'm scared for my life.), even the quiet times<br/>
+                        when we don't say anything. They all matter to me because they're with you.
+                    </p>
+                    <p>
+                        Thank you for being exactly who you are. You don't have to be perfectly perfect for me, you are already in your own way.<br/>
+                        A perfect girl, even with your flaws you're perfect, you're amazing in all the ways that count. I'm happy
+                        that our paths crossed and I hope we keep making beautiful memories together, one day at a time.
+                    </p>
+                    <p class="love"><strong>I Love You, Nwokeji Antilia Kezie.</strong> </p>
+                    <p class="valentine">Once more, Happy Valentine's Day My Love, I hope this made you smile.&#129392;</p>
+                    <strong><span class="forever">Forever Yours</span><span class="heart">&#10084;&#65039;</span></strong>
+                </div>
+            </div>
+        </div>      
+    </body>  
+</html>
